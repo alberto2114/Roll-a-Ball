@@ -5,13 +5,21 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
+
+
+    private Rigidbody rb;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        rb = GetComponent<Rigidbpdy>();
     }
 
     void OnMove(InputValue movementValue){
-     //Function body
+        Vector2 movementVector = movementValue.Get<Vector2>();
+	}
+
+    void FixedUpdate(){
+    
 	}
 }
